@@ -1,0 +1,148 @@
+/* [ START ] Main Rules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #f8eeff;
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	padding: 0 1.5rem;
+}
+body > img {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+	body > img:first-of-type {
+		display: none;
+	}
+}
+body > img:last-of-type {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	body > img:last-of-type {
+		display: block;
+	}
+}
+.open {
+	display: block;
+}
+.close {
+	display: none;
+}
+/* [ END ] Main Rules */
+
+/* [ START ] Main Section STYLE */
+main {
+	max-width: 37.5rem;
+	background-color: #ffffff;
+	align-self: center;
+	padding: 2.5rem;
+	box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
+	border-radius: 1rem;
+	color: #301534;
+}
+@media screen and (max-width: 768px) {
+	main {
+		max-width: 20.438rem;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+	}
+}
+main h2 {
+	display: flex;
+	align-items: center;
+	column-gap: 0.428572em;
+	line-height: 1.178572;
+	font-size: 3.5rem;
+	margin-bottom: 0.571423em;
+}
+@media screen and (max-width: 768px) {
+	main h2 {
+		line-height: 1.1875;
+		font-size: 2rem;
+		margin-bottom: 0.75em;
+	}
+}
+main h2 img {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+	main h2 img {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+main section {
+}
+main section div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main section:not(:first-of-type) div {
+	margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+	main section:not(:first-of-type) div {
+		margin-top: 1.25rem;
+	}
+}
+main section:not(:last-of-type) div {
+	margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+	main section:not(:last-of-type) div {
+		margin-bottom: 1.25rem;
+	}
+}
+main section div h3 {
+	line-height: 1.16667;
+	font-size: 1.125rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+	main section div h3 {
+		line-height: 1.1875;
+		font-size: 1rem;
+	}
+}
+main section div h3:hover {
+	transition: all 0.3s ease-in-out;
+	color: #ad28eb;
+}
+main section div button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: flex;
+}
+main section div button img {
+	width: 1.875rem;
+	height: 1.875rem;
+	align-self: center;
+}
+main section p {
+	margin-bottom: 1.5rem;
+	line-height: 1.5;
+	color: #8b6990;
+}
+@media screen and (max-width: 768px) {
+	main section p {
+		line-height: 1.5;
+		font-size: 0.875rem;
+	}
+}
+.line {
+	height: 0.063rem;
+	background-color: #f8eeff;
+}
+/* [ END ] Main Section STYLE */
